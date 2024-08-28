@@ -45,7 +45,7 @@ In Evans cmd call the service to execute methotds
 service CategoryService
 </pre>
 
-Use **call** command to execute the methods. The list are into proto file.
+Use **call** command to execute the methods. The list is in proto file.
 <pre>
 service CategoryService {
     rpc CreateCategory(CreateCategoryRequest) returns (Category) {}
