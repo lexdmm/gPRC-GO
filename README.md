@@ -44,3 +44,14 @@ In Evans cmd call the service to execute methotds
 <pre>
 service CategoryService
 </pre>
+
+Use **call** command to execute the methods. The list are into proto file.
+<pre>
+service CategoryService {
+    rpc CreateCategory(CreateCategoryRequest) returns (Category) {}
+    rpc CreateCategoryStream(stream CreateCategoryRequest) returns (CategoryList) {}
+    rpc CreateCategoryStreamBidirectional(stream CreateCategoryRequest) returns (stream Category) {}
+    rpc ListCategories(blank) returns (CategoryList) {}
+    rpc GetCategory(CategoryGetRequest) returns (Category) {}
+}
+</pre>
